@@ -1,0 +1,54 @@
+
+Fibonacci  series
+
+public class MyClass {
+
+    public static void main(String[] args) {
+
+        int count = 10, num1 = 0, num2 = 1;
+        System.out.print("Fib Series "+count+" numbers:");
+
+        for (int i = 1; i <= count; ++i)
+        {
+            System.out.print(num1+" ");
+         
+          int sum= num1 + num2;
+            num1 = num2;
+            num2 = sum;
+        }
+    }
+}
+
+
+
+Method Overloading :
+
+class MyClass
+{
+  void yuva() {
+    System.out.println("NIL parameters");
+}
+  void yuva(int a)
+{
+    System.out.println("One Parameter: " + a);
+}
+  void yuva(int a, int b)
+{
+    System.out.println("Two Parameter: " + a + " " + b);
+}}
+
+
+public class Main
+{
+  public static void main(String args[])
+{
+    MyClass object = new MyClass();
+    System.out.println("Method Overloading");
+    object.yuva();
+    object.yuva(3);
+    object.yuva(6, 9);
+   
+   
+
+  }
+}
